@@ -10,6 +10,9 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="org.jetbrains.plugins.template.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="org.jetbrains.plugins.template.toolWindow.CopilotAgentToolWindowFactory"
+                    id="CopilotAgent" anchor="bottom"/>
+        <projectService serviceImplementation="org.jetbrains.plugins.template.agent.CopilotBusinessAgentService"/>
         <postStartupActivity implementation="org.jetbrains.plugins.template.startup.MyProjectActivity" />
     </extensions>
 </idea-plugin>
